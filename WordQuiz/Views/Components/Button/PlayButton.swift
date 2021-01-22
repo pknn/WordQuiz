@@ -18,9 +18,11 @@ struct PlayButton: View {
                 }
             })
             .padding()
+            .padding([.leading, .trailing], /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             .foregroundColor(.white)
             .background(Color.yellow)
             .cornerRadius(5)
+            .shadow(color: .gray, radius: 3, x: 0.0, y: 0.0)
     }
 }
 

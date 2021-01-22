@@ -9,7 +9,16 @@ import SwiftUI
 
 struct LevelSelectView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let columnLayout = [
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
+        LazyVGrid(columns: columnLayout, alignment: .center, spacing: 45) {
+            ForEach(1..<11) {
+                LevelSelectButton(level: $0)
+            }
+        }
+        .navigationTitle("Level Select")
     }
 }
 
