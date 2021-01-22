@@ -11,9 +11,17 @@
 		AF29549D25B9B053007E7BE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29549C25B9B053007E7BE3 /* ContentView.swift */; };
 		AF29549F25B9B055007E7BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF29549E25B9B055007E7BE3 /* Assets.xcassets */; };
 		AF2954A225B9B055007E7BE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2954A125B9B055007E7BE3 /* Preview Assets.xcassets */; };
-		AF2954AD25B9B055007E7BE3 /* WordQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2954AC25B9B055007E7BE3 /* WordQuizTests.swift */; };
 		AF2954B825B9B055007E7BE3 /* WordQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2954B725B9B055007E7BE3 /* WordQuizUITests.swift */; };
 		AF2954D425B9B4B4007E7BE3 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2954D325B9B4B4007E7BE3 /* Quiz.swift */; };
+		AF2954D925B9BF51007E7BE3 /* WordQuizApiInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2954D825B9BF51007E7BE3 /* WordQuizApiInfo.plist */; };
+		AF2954E725B9C10F007E7BE3 /* WordQuizClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2954E625B9C10F007E7BE3 /* WordQuizClient.swift */; };
+		AF2954EF25B9C171007E7BE3 /* WordQuizAPIResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2954EE25B9C171007E7BE3 /* WordQuizAPIResponseBody.swift */; };
+		AF2954F425B9C395007E7BE3 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2954F325B9C395007E7BE3 /* ResponseError.swift */; };
+		AF2954F925B9C586007E7BE3 /* ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2954F825B9C586007E7BE3 /* ClientError.swift */; };
+		AF29550925B9C82C007E7BE3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29550825B9C82C007E7BE3 /* Config.swift */; };
+		AF29550E25B9C8F7007E7BE3 /* ConfigError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29550D25B9C8F7007E7BE3 /* ConfigError.swift */; };
+		AF29551625B9DE59007E7BE3 /* ClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29551525B9DE59007E7BE3 /* ClientTest.swift */; };
+		AF29553125BAD3B9007E7BE3 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29553025BAD3B9007E7BE3 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +49,20 @@
 		AF2954A125B9B055007E7BE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF2954A325B9B055007E7BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF2954A825B9B055007E7BE3 /* WordQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF2954AC25B9B055007E7BE3 /* WordQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizTests.swift; sourceTree = "<group>"; };
 		AF2954AE25B9B055007E7BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF2954B325B9B055007E7BE3 /* WordQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF2954B725B9B055007E7BE3 /* WordQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizUITests.swift; sourceTree = "<group>"; };
 		AF2954B925B9B055007E7BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF2954D325B9B4B4007E7BE3 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		AF2954D825B9BF51007E7BE3 /* WordQuizApiInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WordQuizApiInfo.plist; sourceTree = "<group>"; };
+		AF2954E625B9C10F007E7BE3 /* WordQuizClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizClient.swift; sourceTree = "<group>"; };
+		AF2954EE25B9C171007E7BE3 /* WordQuizAPIResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordQuizAPIResponseBody.swift; sourceTree = "<group>"; };
+		AF2954F325B9C395007E7BE3 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		AF2954F825B9C586007E7BE3 /* ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientError.swift; sourceTree = "<group>"; };
+		AF29550825B9C82C007E7BE3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AF29550D25B9C8F7007E7BE3 /* ConfigError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigError.swift; sourceTree = "<group>"; };
+		AF29551525B9DE59007E7BE3 /* ClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTest.swift; sourceTree = "<group>"; };
+		AF29553025BAD3B9007E7BE3 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,9 @@
 		AF29549925B9B053007E7BE3 /* WordQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				AF29552F25BAD3AF007E7BE3 /* Extensions */,
+				AF29550425B9C818007E7BE3 /* Helpers */,
+				AF2954E525B9C0CE007E7BE3 /* Clients */,
 				AF2954CC25B9B130007E7BE3 /* Errors */,
 				AF2954CB25B9B124007E7BE3 /* Bodies */,
 				AF2954CA25B9B0DF007E7BE3 /* UseCases */,
@@ -106,6 +125,7 @@
 				AF29549E25B9B055007E7BE3 /* Assets.xcassets */,
 				AF2954A325B9B055007E7BE3 /* Info.plist */,
 				AF2954A025B9B055007E7BE3 /* Preview Content */,
+				AF2954D825B9BF51007E7BE3 /* WordQuizApiInfo.plist */,
 			);
 			path = WordQuiz;
 			sourceTree = "<group>";
@@ -121,8 +141,8 @@
 		AF2954AB25B9B055007E7BE3 /* WordQuizTests */ = {
 			isa = PBXGroup;
 			children = (
-				AF2954AC25B9B055007E7BE3 /* WordQuizTests.swift */,
 				AF2954AE25B9B055007E7BE3 /* Info.plist */,
+				AF29551525B9DE59007E7BE3 /* ClientTest.swift */,
 			);
 			path = WordQuizTests;
 			sourceTree = "<group>";
@@ -162,6 +182,7 @@
 		AF2954CB25B9B124007E7BE3 /* Bodies */ = {
 			isa = PBXGroup;
 			children = (
+				AF2954EE25B9C171007E7BE3 /* WordQuizAPIResponseBody.swift */,
 			);
 			path = Bodies;
 			sourceTree = "<group>";
@@ -169,8 +190,35 @@
 		AF2954CC25B9B130007E7BE3 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
+				AF2954F325B9C395007E7BE3 /* ResponseError.swift */,
+				AF2954F825B9C586007E7BE3 /* ClientError.swift */,
+				AF29550D25B9C8F7007E7BE3 /* ConfigError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		AF2954E525B9C0CE007E7BE3 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				AF2954E625B9C10F007E7BE3 /* WordQuizClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		AF29550425B9C818007E7BE3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF29550825B9C82C007E7BE3 /* Config.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AF29552F25BAD3AF007E7BE3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF29553025BAD3B9007E7BE3 /* Array.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +326,7 @@
 			files = (
 				AF2954A225B9B055007E7BE3 /* Preview Assets.xcassets in Resources */,
 				AF29549F25B9B055007E7BE3 /* Assets.xcassets in Resources */,
+				AF2954D925B9BF51007E7BE3 /* WordQuizApiInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +352,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF29549D25B9B053007E7BE3 /* ContentView.swift in Sources */,
+				AF29553125BAD3B9007E7BE3 /* Array.swift in Sources */,
 				AF29549B25B9B053007E7BE3 /* WordQuizApp.swift in Sources */,
+				AF2954E725B9C10F007E7BE3 /* WordQuizClient.swift in Sources */,
+				AF2954F425B9C395007E7BE3 /* ResponseError.swift in Sources */,
+				AF2954EF25B9C171007E7BE3 /* WordQuizAPIResponseBody.swift in Sources */,
+				AF29550925B9C82C007E7BE3 /* Config.swift in Sources */,
 				AF2954D425B9B4B4007E7BE3 /* Quiz.swift in Sources */,
+				AF2954F925B9C586007E7BE3 /* ClientError.swift in Sources */,
+				AF29550E25B9C8F7007E7BE3 /* ConfigError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2954AD25B9B055007E7BE3 /* WordQuizTests.swift in Sources */,
+				AF29551625B9DE59007E7BE3 /* ClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

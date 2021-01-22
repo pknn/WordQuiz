@@ -1,5 +1,5 @@
 //
-//  WordQuiz.swift
+//  WordQuizClient.swift
 //  WordQuiz
 //
 //  Created by Pakanon Pantisawat on 21/1/2564 BE.
@@ -9,7 +9,7 @@ import Foundation
 
 struct WordQuizClient {
     static func get(level: Int) -> Result<Data, Error> {
-        let apiEndpoint = Config.endpoint
+        let apiEndpoint = Config.apiConfig.apiEndpoint
         
         var urlComponents = URLComponents(string: apiEndpoint)
         urlComponents?.queryItems = [
@@ -21,7 +21,7 @@ struct WordQuizClient {
         }
         
         var urlRequest = URLRequest(url: url)
-        Config.headers.forEach { key, value in
+        Config.apiConfig.headers.forEach { key, value in
             urlRequest.addValue(value, forHTTPHeaderField: key)
         }
         
@@ -34,6 +34,7 @@ struct WordQuizClient {
             } else {
                 result = .failure(ClientError.server)
             }
+            semaphore.signal()
         }.resume()
         
         _ = semaphore.wait(timeout: .distantFuture)

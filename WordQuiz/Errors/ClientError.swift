@@ -8,5 +8,6 @@
 import Foundation
 
 enum ClientError: Error {
-    case 
+    case request
+    case server
 }
