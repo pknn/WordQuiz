@@ -63,6 +63,7 @@
 		AF29550D25B9C8F7007E7BE3 /* ConfigError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigError.swift; sourceTree = "<group>"; };
 		AF29551525B9DE59007E7BE3 /* ClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTest.swift; sourceTree = "<group>"; };
 		AF29553025BAD3B9007E7BE3 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		AF29553825BAD599007E7BE3 /* Experiment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Experiment.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 		AF29548E25B9B053007E7BE3 = {
 			isa = PBXGroup;
 			children = (
+				AF29553825BAD599007E7BE3 /* Experiment.playground */,
 				AF29549925B9B053007E7BE3 /* WordQuiz */,
 				AF2954AB25B9B055007E7BE3 /* WordQuizTests */,
 				AF2954B625B9B055007E7BE3 /* WordQuizUITests */,
