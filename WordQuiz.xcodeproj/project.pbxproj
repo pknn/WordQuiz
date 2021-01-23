@@ -25,7 +25,8 @@
 		AF29554B25BADA8B007E7BE3 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29554A25BADA8B007E7BE3 /* PlayButton.swift */; };
 		AF29555325BADAC5007E7BE3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29555225BADAC5007E7BE3 /* MenuView.swift */; };
 		AF29555825BADD66007E7BE3 /* LevelSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29555725BADD66007E7BE3 /* LevelSelectView.swift */; };
-		AF29555D25BADE77007E7BE3 /* LevelSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29555C25BADE77007E7BE3 /* LevelSelectButton.swift */; };
+		AF29556525BC0C77007E7BE3 /* ArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29556425BC0C77007E7BE3 /* ArrowButton.swift */; };
+		AF29556A25BC1797007E7BE3 /* LevelSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29556925BC1797007E7BE3 /* LevelSelector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +72,8 @@
 		AF29554A25BADA8B007E7BE3 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		AF29555225BADAC5007E7BE3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		AF29555725BADD66007E7BE3 /* LevelSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectView.swift; sourceTree = "<group>"; };
-		AF29555C25BADE77007E7BE3 /* LevelSelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectButton.swift; sourceTree = "<group>"; };
+		AF29556425BC0C77007E7BE3 /* ArrowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowButton.swift; sourceTree = "<group>"; };
+		AF29556925BC1797007E7BE3 /* LevelSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				AF29554925BADA7C007E7BE3 /* Button */,
+				AF29556925BC1797007E7BE3 /* LevelSelector.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -246,7 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				AF29554A25BADA8B007E7BE3 /* PlayButton.swift */,
-				AF29555C25BADE77007E7BE3 /* LevelSelectButton.swift */,
+				AF29556425BC0C77007E7BE3 /* ArrowButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -385,12 +388,13 @@
 				AF29555325BADAC5007E7BE3 /* MenuView.swift in Sources */,
 				AF29553125BAD3B9007E7BE3 /* Array.swift in Sources */,
 				AF29549B25B9B053007E7BE3 /* WordQuizApp.swift in Sources */,
-				AF29555D25BADE77007E7BE3 /* LevelSelectButton.swift in Sources */,
 				AF2954E725B9C10F007E7BE3 /* WordQuizClient.swift in Sources */,
 				AF2954F425B9C395007E7BE3 /* ResponseError.swift in Sources */,
 				AF29554B25BADA8B007E7BE3 /* PlayButton.swift in Sources */,
+				AF29556A25BC1797007E7BE3 /* LevelSelector.swift in Sources */,
 				AF2954EF25B9C171007E7BE3 /* WordQuizAPIResponseBody.swift in Sources */,
 				AF29550925B9C82C007E7BE3 /* Config.swift in Sources */,
+				AF29556525BC0C77007E7BE3 /* ArrowButton.swift in Sources */,
 				AF29555825BADD66007E7BE3 /* LevelSelectView.swift in Sources */,
 				AF2954D425B9B4B4007E7BE3 /* Quiz.swift in Sources */,
 				AF2954F925B9C586007E7BE3 /* ClientError.swift in Sources */,

@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct LevelSelectView: View {
-    var body: some View {
-        let columnLayout = [
-            GridItem(.flexible()),
-            GridItem(.flexible())
-        ]
-        LazyVGrid(columns: columnLayout, alignment: .center, spacing: 45) {
-            ForEach(1..<11) {
-                LevelSelectButton(level: $0)
-            }
+    @State var level = 1
+    
+    func changeLevel(with n: Int) {
+        level += n
+        if level < 1 {
+            level = 10
+        } else if level > 10 {
+            level = 1
         }
-        .navigationTitle("Level Select")
+    }
+    
+    var body: some View {
+        VStack {
+            LevelSelector(level: $level)
+        }
+        .navigationBarHidden(true)
     }
 }
 
