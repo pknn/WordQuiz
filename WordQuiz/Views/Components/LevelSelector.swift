@@ -15,27 +15,38 @@ fileprivate enum MoveDirection {
 struct LevelSelector: View {
     @Binding var level: Int
     @State private var direction: MoveDirection = .forward
+    
+    func changeLevel(with n: Int, from s: Int, to e: Int) {
+        level += n
+        if level < s {
+            level = e
+        } else if level > e {
+            level = s
+        }
+    }
+    
     var body: some View {
-        HStack(alignment: .center) {
-            ArrowButton(arrowDirection: .left) {
-                direction = .backward
-                level = level - 1
-            }
-            
-            Text("\(level)")
-                .font(.system(size: 80))
-                .frame(width: 100, height: 100, alignment: .center)
-                .padding()
-                .id("LevelIdentifier_\(level)")
-                .transition(.asymmetric(
-                    insertion: .move(edge: direction == .forward ? .trailing : .leading),
-                    removal: .move(edge: direction == .forward ? .leading : .trailing)
-                ))
-                .animation(.easeInOut)
-            
-            ArrowButton(arrowDirection: .right) {
-                direction = .forward
-                level = level + 1
+        ZStack {
+            HStack(alignment: .center) {
+                ArrowButton(arrowDirection: .left) {
+                    direction = .backward
+                    changeLevel(with: -1, from: 1, to: 10)                }
+                
+                Text("\(level)")
+                    .font(.system(size: 80))
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .padding()
+                    .id("LevelIdentifier_\(level)")
+                    .transition(.asymmetric(
+                        insertion: .move(edge: direction == .forward ? .trailing : .leading),
+                        removal: .move(edge: direction == .forward ? .leading : .trailing)
+                    ))
+                    .animation(.easeInOut)
+                
+                ArrowButton(arrowDirection: .right) {
+                    direction = .forward
+                    changeLevel(with: 1, from: 1, to: 10)
+                }
             }
         }
     }
