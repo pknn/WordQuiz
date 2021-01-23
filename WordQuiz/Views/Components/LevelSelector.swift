@@ -16,7 +16,7 @@ struct LevelSelector: View {
     @Binding var level: Int
     @State private var direction: MoveDirection = .forward
     
-    func changeLevel(with n: Int, from s: Int, to e: Int) {
+    func changeLevelWithWrapped(with n: Int, from s: Int, to e: Int) {
         level += n
         if level < s {
             level = e
@@ -30,7 +30,7 @@ struct LevelSelector: View {
             HStack(alignment: .center) {
                 ArrowButton(arrowDirection: .left) {
                     direction = .backward
-                    changeLevel(with: -1, from: 1, to: 10)                }
+                    changeLevelWithWrapped(with: -1, from: 1, to: 10)                }
                 
                 Text("\(level)")
                     .font(.system(size: 80))
@@ -45,7 +45,7 @@ struct LevelSelector: View {
                 
                 ArrowButton(arrowDirection: .right) {
                     direction = .forward
-                    changeLevel(with: 1, from: 1, to: 10)
+                    changeLevelWithWrapped(with: 1, from: 1, to: 10)
                 }
             }
         }
